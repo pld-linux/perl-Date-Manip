@@ -2,9 +2,9 @@
 Summary:	Date-Manip perl module
 Summary(pl):	Modu³ perla Date-Manip
 Name:		perl-Date-Manip
-Version:	5.34
-Release:	3
-Copyright:	GPL
+Version:	5.36
+Release:	1
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Date/DateManip-%{version}.tar.gz
