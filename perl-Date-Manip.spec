@@ -6,7 +6,8 @@ Summary(pl):	Date::Manip - procedury do operowania na datach
 Name:		perl-Date-Manip
 Version:	5.42a
 Release:	1
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
 # Source0-md5:	648386bbf46d021ae283811f75b07bdf
@@ -17,10 +18,17 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Date::Manip - date manipulation routines.
+Perl module Date::Manip contains a set of routines designed to make
+any common date/time manipulation easy to do.  Operations such as
+comparing two times, calculating a time a given amount of time from
+another, or parsing international times are all easily done.
 
 %description -l pl
-Date::Manip - procedury do operowania na datach.
+Modu³ Perla Date::Manip zawiera zbiór procedur zaprojektowanych, aby
+u³atwiæ czêsto wykonywane operacje na datach/czasie. Operacje takie
+jak porównywanie dwóch czasów, obliczanie czasu nastêpuj±cego po
+zadanej ilo¶ci czasu od innego czasu, analiza czasów z podan± stref±
+czasow± - wszystkie ³atwo wykonaæ.
 
 %prep
 %setup -q -n %{pdir}%{pnam}-%{version}
