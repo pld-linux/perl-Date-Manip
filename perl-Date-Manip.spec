@@ -3,7 +3,7 @@ Summary:	Date-Manip perl module
 Summary(pl):	Modu³ perla Date-Manip
 Name:		perl-Date-Manip
 Version:	5.40
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -13,6 +13,7 @@ BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Obsoletes:	perl-DateManip
 
 %description
 Date-Manip - date manipulation routines.
