@@ -4,17 +4,17 @@
 Summary:	Date::Manip - date manipulation routines
 Summary(pl):	Date::Manip - procedury do operowania na datach
 Name:		perl-Date-Manip
-Version:	5.40
-Release:	5
+Version:	5.42a
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
-# Source0-md5:	8db456b068eeaaeaa49eadc4c57baed7
+# Source0-md5:	648386bbf46d021ae283811f75b07bdf
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
+Obsoletes:	perl-DateManip
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Obsoletes:	perl-DateManip
 
 %description
 Date::Manip - date manipulation routines.
@@ -33,7 +33,8 @@ Date::Manip - procedury do operowania na datach.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
