@@ -2,7 +2,7 @@
 Summary:	Date-Manip perl module
 Summary(pl):	Modu³ perla Date-Manip
 Name:		perl-Date-Manip
-Version:	5.36
+Version:	5.39
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
@@ -34,7 +34,7 @@ rm -rf $RPM_BUILD_ROOT
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Date/Manip
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
