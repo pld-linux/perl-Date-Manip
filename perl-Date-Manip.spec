@@ -5,7 +5,7 @@ Summary:	Date::Manip - date manipulation routines
 Summary(pl):	Date::Manip - procedury do operowania na datach
 Name:		perl-Date-Manip
 Version:	5.42a
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
