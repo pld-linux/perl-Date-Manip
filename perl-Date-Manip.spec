@@ -27,7 +27,7 @@ Date::Manip - procedury do operowania na datach.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
