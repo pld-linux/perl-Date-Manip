@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Date
 %define	pnam	Manip
-Summary:	Date::Manip perl module
-Summary(pl):	Modu³ perla Date::Manip
+Summary:	Date::Manip - date manipulation routines
+Summary(pl):	Date::Manip - procedury do operowania na datach
 Name:		perl-Date-Manip
 Version:	5.40
 Release:	4
