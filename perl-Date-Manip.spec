@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	Date-Manip perl module
-Summary(pl):	Modu³ perla Date-Manip
+Summary:	Date::Manip perl module
+Summary(pl):	Modu³ perla Date::Manip
 Name:		perl-Date-Manip
 Version:	5.40
 Release:	4
@@ -14,10 +14,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	perl-DateManip
 
 %description
-Date-Manip - date manipulation routines.
+Date::Manip - date manipulation routines.
 
 %description -l pl
-Date-Manip - rutyny do operowania na dacie.
+Date::Manip - rutyny do operowania na dacie.
 
 %prep
 %setup -q -n DateManip-%{version}
