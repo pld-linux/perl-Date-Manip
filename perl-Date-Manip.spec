@@ -2,7 +2,7 @@
 %define		pdir	Date
 %define		pnam	Manip
 Summary:	Date::Manip - date manipulation routines
-Summary(pl):	Date::Manip - procedury do operowania na datach
+Summary(pl.UTF-8):   Date::Manip - procedury do operowania na datach
 Name:		perl-Date-Manip
 Version:	5.44
 Release:	1
@@ -23,12 +23,12 @@ any common date/time manipulation easy to do.  Operations such as
 comparing two times, calculating a time a given amount of time from
 another, or parsing international times are all easily done.
 
-%description -l pl
-Modu³ Perla Date::Manip zawiera zbiór procedur zaprojektowanych, aby
-u³atwiæ czêsto wykonywane operacje na datach/czasie. Operacje takie
-jak porównywanie dwóch czasów, obliczanie czasu nastêpuj±cego po
-zadanej ilo¶ci czasu od innego czasu, analiza czasów z podan± stref±
-czasow± - wszystkie ³atwo wykonaæ.
+%description -l pl.UTF-8
+ModuÅ‚ Perla Date::Manip zawiera zbiÃ³r procedur zaprojektowanych, aby
+uÅ‚atwiÄ‡ czÄ™sto wykonywane operacje na datach/czasie. Operacje takie
+jak porÃ³wnywanie dwÃ³ch czasÃ³w, obliczanie czasu nastÄ™pujÄ…cego po
+zadanej iloÅ›ci czasu od innego czasu, analiza czasÃ³w z podanÄ… strefÄ…
+czasowÄ… - wszystkie Å‚atwo wykonaÄ‡.
 
 %prep
 %setup -q -n %{pdir}%{pnam}-%{version}
