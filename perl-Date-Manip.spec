@@ -2,7 +2,7 @@
 %define		pdir	Date
 %define		pnam	Manip
 Summary:	Date::Manip - date manipulation routines
-Summary(pl.UTF-8):   Date::Manip - procedury do operowania na datach
+Summary(pl.UTF-8):	Date::Manip - procedury do operowania na datach
 Name:		perl-Date-Manip
 Version:	5.44
 Release:	1
