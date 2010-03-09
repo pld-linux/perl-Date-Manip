@@ -4,13 +4,13 @@
 Summary:	Date::Manip - date manipulation routines
 Summary(pl.UTF-8):	Date::Manip - procedury do operowania na datach
 Name:		perl-Date-Manip
-Version:	6.04
+Version:	6.07
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://search.cpan.org/CPAN/authors/id/S/SB/SBECK/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	2189d79c2358361e082112129441c5bd
+# Source0-md5:	5a7724564c964a33aaf92bf4c7613fcc
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Obsoletes:	perl-DateManip
