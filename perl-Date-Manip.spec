@@ -12,8 +12,9 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/S/SB/SBECK/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Date/SBECK/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	80b48ad87ee11ce3e440a39fa0e03eb6
+URL:		http://search.cpan.org/dist/Date-Manip/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Obsoletes:	perl-DateManip
@@ -47,6 +48,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/Date/{Manip,Manip/*}.pod
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -62,4 +65,4 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/Date/Manip/Offset/*.pm
 %dir %{perl_vendorlib}/Date/Manip/TZ
 %{perl_vendorlib}/Date/Manip/TZ/*.pm
-%{_mandir}/man3/*
+%{_mandir}/man3/Date::Manip*.3pm*
