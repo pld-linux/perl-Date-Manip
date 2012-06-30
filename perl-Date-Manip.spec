@@ -1,5 +1,6 @@
-# TODO:
-# - Deal with unpackaged pod files
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Date
@@ -12,11 +13,15 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Date/SBECK/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Date/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	0d5c1ee2f75f6407fb1035e3535f650b
 URL:		http://search.cpan.org/dist/Date-Manip/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl-Test-Inter
+BuildRequires:	perl-YAML-Syck
+%endif
 Obsoletes:	perl-DateManip
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -42,21 +47,23 @@ czasową - wszystkie łatwo wykonać.
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/Date/{Manip,Manip/*}.pod
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/Date/{Manip,Manip/*,Manip/Lang/*}.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
-%{perl_vendorlib}/Date/*.pm
+%doc HISTORY LICENSE README.first
+%{perl_vendorlib}/Date/Manip.pm
 %dir %{perl_vendorlib}/Date/Manip
 %{perl_vendorlib}/Date/Manip/*.pm
 %dir %{perl_vendorlib}/Date/Manip/Lang
