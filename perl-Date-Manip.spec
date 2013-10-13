@@ -63,6 +63,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc HISTORY LICENSE README.first
+%attr(755,root,root) %{_bindir}/dm_date
+%attr(755,root,root) %{_bindir}/dm_zdump
 %{perl_vendorlib}/Date/Manip.pm
 %dir %{perl_vendorlib}/Date/Manip
 %{perl_vendorlib}/Date/Manip/*.pm
@@ -72,4 +74,6 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/Date/Manip/Offset/*.pm
 %dir %{perl_vendorlib}/Date/Manip/TZ
 %{perl_vendorlib}/Date/Manip/TZ/*.pm
+%{_mandir}/man1/dm_date.1p.gz
+%{_mandir}/man1/dm_zdump.1p.gz
 %{_mandir}/man3/Date::Manip*.3pm*
