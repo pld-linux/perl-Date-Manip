@@ -8,13 +8,13 @@
 Summary:	Date::Manip - date manipulation routines
 Summary(pl.UTF-8):	Date::Manip - procedury do operowania na datach
 Name:		perl-Date-Manip
-Version:	6.42
+Version:	6.48
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Date/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	70ec592364c3f7f5aea26a852f2dc8ed
+# Source0-md5:	fc1629f119072fa723ff89133d6f9a2d
 URL:		http://search.cpan.org/dist/Date-Manip/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -62,7 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc HISTORY LICENSE README.first
+%doc Changes LICENSE README.first
 %attr(755,root,root) %{_bindir}/dm_date
 %attr(755,root,root) %{_bindir}/dm_zdump
 %{perl_vendorlib}/Date/Manip.pm
